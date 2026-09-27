@@ -110,6 +110,7 @@
     "saved": "Sale recorded.",
     "total": "Total",
     "insufficientStock": "Not enough stock. Only {{available}} left of {{name}}.",
+    "noStock": "No stock available yet. Add stock in the \"Add Stock\" tab first.",
     "voided": "Voided",
     "void": "Void this sale",
     "recentSales": "Recent sales"
