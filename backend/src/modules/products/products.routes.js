@@ -8,7 +8,7 @@ const router = Router();
 const productSchema = z.object({
   name: z.string().trim().min(1).max(100),
   categoryId: z.number().int().positive().nullable().optional(),
-  unit: z.enum(['piece', 'pack', 'box', 'dozen']),
+  unit: z.enum(['piece', 'dozen']),
   description: z.string().trim().max(500).nullable().optional(),
   lowStockThreshold: z.number().int().min(0).max(100000),
 });
