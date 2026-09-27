@@ -90,6 +90,15 @@ export default function Sell() {
     }
   }
 
+  const sellable = products.filter((p) => p.quantity > 0);
+
+  if (products.length === 0) {
+    return <div className="card"><p>{t('stock.noProducts')}</p></div>;
+  }
+  if (sellable.length === 0) {
+    return <div className="card"><p>{t('sell.noStock')}</p></div>;
+  }
+
   return (
     <div className="stack">
       <form className="card" onSubmit={submitSale}>
@@ -98,7 +107,7 @@ export default function Sell() {
         <div className="row">
           <select value={pickProduct} onChange={(e) => setPickProduct(e.target.value)}>
             <option value="">{t('stock.selectProduct')}</option>
-            {products.filter((p) => p.quantity > 0).map((p) => (
+            {sellable.map((p) => (
               <option key={p.id} value={p.id}>{p.name} ({p.quantity} {t(`units.${p.unit}`)})</option>
             ))}
           </select>
