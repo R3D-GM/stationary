@@ -1,0 +1,131 @@
+:root {
+  --primary: #1f6f5c;
+  --primary-dark: #17564a;
+  --bg: #f4f6f5;
+  --text: #1c2b27;
+  --border: #d9e1de;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Noto Sans Ethiopic', system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+.card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+.center-msg { text-align: center; margin-top: 40px; }
+
+.btn { background: var(--primary); color: #fff; border: 0; padding: 12px 18px; border-radius: 8px; font: inherit; cursor: pointer; }
+.btn:hover { background: var(--primary-dark); }
+.btn:disabled { opacity: .6; cursor: wait; }
+.btn-outline { background: #fff; border: 1px solid var(--border); padding: 8px 12px; border-radius: 8px; font: inherit; cursor: pointer; }
+label { display: block; margin-bottom: 14px; font-weight: 600; }
+input, select { display: block; width: 100%; margin-top: 6px; padding: 11px; border: 1px solid var(--border); border-radius: 8px; font: inherit; }
+.error { color: #b3261e; background: #fdecea; padding: 10px; border-radius: 8px; }
+
+.lang-switch { display: flex; gap: 6px; }
+.lang-switch button { border: 1px solid var(--border); background: #fff; padding: 6px 10px; border-radius: 8px; cursor: pointer; font: inherit; }
+.lang-switch button.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+.login-page { min-height: 100vh; display: grid; place-items: center; padding: 16px; }
+.login-card { width: 100%; max-width: 380px; }
+
+.layout { display: flex; min-height: 100vh; }
+.sidebar { width: 230px; background: var(--primary); color: #fff; padding: 16px; flex-shrink: 0; }
+.brand { font-size: 1.05rem; margin: 0 0 18px; }
+.sidebar nav { display: flex; flex-direction: column; gap: 4px; }
+.sidebar a { color: #dff1ec; text-decoration: none; padding: 10px 12px; border-radius: 8px; }
+.sidebar a.active, .sidebar a:hover { background: rgba(255,255,255,.16); color: #fff; }
+.main { flex: 1; min-width: 0; }
+.topbar { display: flex; align-items: center; gap: 12px; justify-content: flex-end; padding: 12px 20px; background: #fff; border-bottom: 1px solid var(--border); flex-wrap: wrap; }
+.content { padding: 20px; }
+
+@media (max-width: 800px) {
+  .layout { flex-direction: column; }
+  .sidebar { width: 100%; padding: 10px; }
+  .brand { display: none; }
+  .sidebar nav { flex-direction: row; overflow-x: auto; }
+  .sidebar a { white-space: nowrap; }
+}
+
+/* ---- Day 2 ---- */
+.stack { display: flex; flex-direction: column; gap: 16px; }
+.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+.row { display: flex; gap: 10px; align-items: center; }
+.row input, .row select { margin-top: 0; }
+hr { border: 0; border-top: 1px solid var(--border); margin: 20px 0; }
+h2 { margin-top: 0; }
+
+.table-wrap { overflow-x: auto; margin-top: 12px; }
+table { width: 100%; border-collapse: collapse; min-width: 600px; }
+th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--border); white-space: nowrap; }
+th { font-size: .85rem; color: #55675f; }
+
+.success { color: #1b6b3a; background: #e6f4ea; padding: 10px; border-radius: 8px; }
+.warn { color: #8a5a00; background: #fff4d6; padding: 10px; border-radius: 8px; margin: 6px 0; }
+.alert-card { border-color: #f0d28a; }
+.preview { background: #f0f7f4; border-radius: 8px; padding: 12px; margin-bottom: 14px; }
+.row-low { background: #fff8e6; }
+.badge-low { background: #f5b301; color: #1c2b27; font-size: .75rem; padding: 2px 8px; border-radius: 999px; margin-left: 8px; }
+
+@media (max-width: 700px) {
+  .grid-2 { grid-template-columns: 1fr; }
+}
+
+/* ---- Day 3-6 ---- */
+.row-voided { opacity: .55; text-decoration: line-through; }
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+.kpi-card { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 6px; }
+.kpi-label { font-size: .8rem; color: #55675f; }
+.kpi-value { font-size: 1.4rem; font-weight: 700; color: var(--primary-dark); }
+
+.chart-wrap { width: 100%; }
+.chart-svg { width: 100%; height: auto; display: block; }
+.chart-labels { display: flex; justify-content: space-between; font-size: .8rem; color: #55675f; margin-top: 4px; }
+
+/* ---- Simplified nav + mobile bottom bar + floating AI button ---- */
+@media (max-width: 800px) {
+  .layout { flex-direction: column; }
+  .sidebar {
+    position: fixed; bottom: 0; left: 0; right: 0; top: auto;
+    width: 100%; padding: 6px 4px 8px; z-index: 20;
+  }
+  .brand { display: none; }
+  .sidebar nav { flex-direction: row; width: 100%; justify-content: space-around; }
+  .sidebar a {
+    display: flex; flex-direction: column; align-items: center; gap: 2px;
+    font-size: .72rem; padding: 6px 4px; white-space: normal; flex: 1;
+  }
+  .content { padding: 14px; padding-bottom: 92px; }
+}
+
+.ai-fab {
+  position: fixed; right: 18px; bottom: 24px;
+  width: 54px; height: 54px; border-radius: 50%;
+  background: var(--primary); color: #fff; border: none;
+  font-size: 1.4rem; box-shadow: 0 4px 14px rgba(0,0,0,.25);
+  cursor: pointer; z-index: 30; display: flex; align-items: center; justify-content: center;
+}
+.ai-fab:hover { background: var(--primary-dark); }
+@media (max-width: 800px) {
+  .ai-fab { bottom: 82px; }
+}
+
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0,0,0,.45);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 50; padding: 16px;
+}
+.modal-panel {
+  background: #fff; border-radius: 14px; max-width: 640px; width: 100%;
+  max-height: 85vh; overflow-y: auto; padding: 20px;
+}
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; gap: 12px; }
+.modal-header h2 { margin: 0; }
+
+.tabs-bar { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.tab {
+  flex-shrink: 0; border: 1px solid var(--border); background: #fff;
+  padding: 10px 16px; border-radius: 999px; cursor: pointer; font: inherit;
+}
+.tab.active { background: var(--primary); color: #fff; border-color: var(--primary); }
