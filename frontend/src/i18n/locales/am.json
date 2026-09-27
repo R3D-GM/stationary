@@ -1,5 +1,7 @@
 {
-  "app": { "name": "የጽህፈት መሳሪያ አስተዳደር" },
+  "app": {
+    "name": "የጽህፈት መሳሪያ አስተዳደር"
+  },
   "nav": {
     "dashboard": "ዳሽቦርድ",
     "operations": "ምዝገባ",
@@ -29,35 +31,33 @@
     "date": "ቀን",
     "total": "ጠቅላላ",
     "cash": "ጥሬ ገንዘብ",
-    "account": "በሂሳብ",
+    "account": "አካካውንት",
     "close": "ዝጋ",
     "download": "አውርድ",
     "owner": "ባለቤት",
     "staff": "ሰራተኛ"
   },
   "units": {
-    "piece": "ቁራጭ",
-    "pack": "ጥቅል",
-    "box": "ሳጥን",
+    "piece": "ነጠላ",
     "dozen": "ደርዘን"
   },
   "products": {
-    "title": "ምርቶች",
-    "addTitle": "አዲስ ምርት",
-    "editTitle": "ምርት አስተካክል",
-    "name": "የምርት ስም",
+    "title": "የገቡ እቃዎች",
+    "addTitle": "አዲስ እቃ",
+    "editTitle": "እቃ አስተካክል",
+    "name": "የእቃ ስም",
     "category": "ምድብ",
     "noCategory": "— ምድብ የለም —",
     "unit": "መለኪያ",
     "description": "መግለጫ (አማራጭ)",
     "threshold": "ዝቅተኛ ክምችት ማስጠንቀቂያ (ከዚህ ቁጥር በታች ሲሆን)",
     "newCategory": "አዲስ ምድብ ጨምር",
-    "empty": "ምንም ምርት አልተመዘገበም።",
-    "saved": "ምርቱ ተቀምጧል።"
+    "empty": "ምንም እቃ አልተመዘገበም።",
+    "saved": "እቃው ተቀምጧል።"
   },
   "stock": {
     "title": "ክምችት ጨምር",
-    "product": "ምርት",
+    "product": "እቃ",
     "selectProduct": "— ይምረጡ —",
     "quantity": "ብዛት",
     "unitCost": "የግዢ ዋጋ (ለአንዱ)",
@@ -70,11 +70,11 @@
     "submit": "ክምችት መዝግብ",
     "saved": "ክምችቱ ተመዝግቧል።",
     "recent": "የቅርብ ጊዜ ግዢዎች",
-    "noProducts": "መጀመሪያ ምርት ይመዝግቡ።"
+    "noProducts": "መጀመሪያ እቃ ይመዝግቡ።"
   },
   "inventory": {
     "title": "ቀሪ ክምችት",
-    "search": "ምርት ፈልግ...",
+    "search": "እቃ ፈልግ...",
     "purchased": "የገባ",
     "sold": "የተሸጠ",
     "remaining": "ቀሪ",
@@ -85,23 +85,23 @@
     "low": "ዝቅተኛ",
     "lowStockMsg": "የ{{name}} ክምችት ዝቅተኛ ነው። {{qty}} ብቻ ቀርቷል።",
     "allGood": "ሁሉም ክምችት በቂ ነው።",
-    "empty": "ምንም ምርት የለም።"
+    "empty": "ምንም እቃ የለም።"
   },
   "dashboard": {
-    "lowStock": "ዝቅተኛ ክምችት ያላቸው ምርቶች",
+    "lowStock": "ዝቅተኛ ክምችት ያላቸው እቃዎች",
     "todaySales": "የዛሬ ጠቅላላ ሽያጭ",
     "todayCash": "የዛሬ ጥሬ ገንዘብ",
     "todayAccount": "የዛሬ በሂሳብ",
     "todayProfit": "የዛሬ ትርፍ",
     "outstandingAccount": "ጠቅላላ ያልተሰበሰበ (በሂሳብ)",
     "totalStock": "ጠቅላላ የክምችት ብዛት",
-    "totalProducts": "ጠቅላላ የምርት ዓይነት"
+    "totalProducts": "ጠቅላላ የእቃ ዓይነት"
   },
   "sell": {
     "title": "ሽያጭ መዝግብ",
-    "addItem": "ወደ ጋሪ ጨምር",
+    "addItem": "ተሽጧል",
     "cart": "የሽያጭ ዝርዝር",
-    "emptyCart": "ገና ምንም ምርት አልተጨመረም።",
+    "emptyCart": "ገና ምንም እቃ አልተጨመረም።",
     "qty": "ብዛት",
     "remove": "አስወግድ",
     "paymentMethod": "የክፍያ ዓይነት",
@@ -128,15 +128,15 @@
   "daily": {
     "title": "ዕለታዊ መዝገብ",
     "pickDate": "ቀን ይምረጡ",
-    "productRevenue": "የምርት ገቢ",
-    "productCost": "የምርት ወጪ",
-    "productProfit": "የምርት ትርፍ",
+    "productRevenue": "የእቃ ገቢ",
+    "productCost": "የእቃ ወጪ",
+    "productProfit": "የእቃ ትርፍ",
     "serviceRevenue": "የአገልግሎት ገቢ",
     "cashSales": "ጥሬ ገንዘብ ሽያጭ",
     "accountSales": "በሂሳብ ሽያጭ",
     "totalRevenue": "ጠቅላላ ገቢ",
     "totalProfit": "ጠቅላላ ትርፍ",
-    "soldProducts": "የተሸጡ ምርቶች",
+    "soldProducts": "የተሸጡ እቃዎች",
     "servicesByType": "በዓይነት የተከፋፈለ አገልግሎት",
     "noActivity": "በዚህ ቀን ምንም እንቅስቃሴ አልነበረም።"
   },
@@ -163,10 +163,10 @@
   "ai": {
     "title": "AI ምክሮች",
     "disclaimer": "እነዚህ ትንታኔዎች የተመሰረቱት በትክክለኛ የተመዘገበ የሽያጭ መረጃ ላይ ብቻ ነው። ትንበያዎች ዋስትና አይደሉም።",
-    "topSellers": "በብዛት የሚሸጡ ምርቶች (ባለፉት 30 ቀናት)",
-    "profitLeaders": "ከፍተኛ ትርፍ የሚያስገኙ ምርቶች",
-    "slowMovers": "ለረጅም ጊዜ ያልተሸጡ ምርቶች",
-    "restockSuggestions": "እንደገና መግዛት የሚያስፈልጋቸው ምርቶች",
+    "topSellers": "በብዛት የሚሸጡ እቃዎች (ባለፉት 30 ቀናት)",
+    "profitLeaders": "ከፍተኛ ትርፍ የሚያስገኙ እቃዎች",
+    "slowMovers": "ለረጅም ጊዜ ያልተሸጡ እቃዎች",
+    "restockSuggestions": "እንደገና መግዛት የሚያስፈልጋቸው እቃዎች",
     "noData": "እስካሁን በቂ መረጃ የለም።",
     "qtySold": "የተሸጠ ብዛት",
     "revenue": "ገቢ",
@@ -191,8 +191,8 @@
     "FORBIDDEN": "ይህን ለማድረግ ፈቃድ የለዎትም።",
     "SETUP_ALREADY_DONE": "የባለቤት መለያ አስቀድሞ ተፈጥሯል።",
     "USERNAME_TAKEN": "ይህ የተጠቃሚ ስም ተይዟል።",
-    "PRODUCT_EXISTS": "ይህ ምርት አስቀድሞ ተመዝግቧል።",
-    "PRODUCT_NOT_FOUND": "ምርቱ አልተገኘም።",
+    "PRODUCT_EXISTS": "ይህ እቃ አስቀድሞ ተመዝግቧል።",
+    "PRODUCT_NOT_FOUND": "እቃው አልተገኘም።",
     "CATEGORY_EXISTS": "ይህ ምድብ አስቀድሞ አለ።",
     "CATEGORY_NOT_FOUND": "ምድቡ አልተገኘም።",
     "INSUFFICIENT_STOCK": "በቂ ክምችት የለም። ለ{{name}} {{available}} ብቻ ቀርቷል።",
