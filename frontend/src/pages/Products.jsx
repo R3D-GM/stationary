@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { api } from '../api/client';
 import { formatMoney, categoryName } from '../utils/format';
 
-const UNITS = ['piece', 'pack', 'box', 'dozen'];
+const UNITS = ['piece', 'dozen'];
 const EMPTY = { name: '', categoryId: '', unit: 'piece', description: '', lowStockThreshold: 5 };
 
 export default function Products() {
