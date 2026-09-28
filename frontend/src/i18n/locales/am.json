@@ -56,7 +56,7 @@
     "saved": "እቃው ተቀምጧል።"
   },
   "stock": {
-    "title": "ክምችት ጨምር",
+    "title": "የተሸጠ እቃ",
     "product": "እቃ",
     "selectProduct": "— ይምረጡ —",
     "quantity": "ብዛት",
@@ -91,9 +91,9 @@
     "lowStock": "ዝቅተኛ ክምችት ያላቸው እቃዎች",
     "todaySales": "የዛሬ ጠቅላላ ሽያጭ",
     "todayCash": "የዛሬ ጥሬ ገንዘብ",
-    "todayAccount": "የዛሬ በሂሳብ",
+    "todayAccount": "የዛሬ አካካውንት",
     "todayProfit": "የዛሬ ትርፍ",
-    "outstandingAccount": "ጠቅላላ ያልተሰበሰበ (በሂሳብ)",
+    "outstandingAccount": "ጠቅላላ ያልተሰበሰበ (አካካውንት)",
     "totalStock": "ጠቅላላ የክምችት ብዛት",
     "totalProducts": "ጠቅላላ የእቃ ዓይነት"
   },
@@ -110,7 +110,7 @@
     "saved": "ሽያጩ ተመዝግቧል።",
     "total": "ጠቅላላ",
     "insufficientStock": "በቂ ክምችት የለም። ለ{{name}} {{available}} ብቻ ቀርቷል።",
-    "noStock": "ምንም ክምችት የለም። መጀመሪያ በ«ክምችት ጨምር» ትር ክምችት ይመዝግቡ።",
+    "noStock": "ምንም ክምችት የለም። መጀመሪያ ክምችት ይመዝግቡ።",
     "voided": "ተሰርዟል",
     "void": "ሽያጩን ሰርዝ",
     "recentSales": "የቅርብ ጊዜ ሽያጮች"
@@ -118,7 +118,7 @@
   "services": {
     "title": "አገልግሎት መዝግብ",
     "serviceType": "የአገልግሎት ዓይነት",
-    "quantity": "ብዛት (ገጽ/ቁራጭ)",
+    "quantity": "ብዛት (ገጽ/ነጠላ)",
     "unitPrice": "ዋጋ ለአንዱ",
     "total": "ጠቅላላ",
     "submit": "አገልግሎት መዝግብ",
@@ -133,7 +133,7 @@
     "productProfit": "የእቃ ትርፍ",
     "serviceRevenue": "የአገልግሎት ገቢ",
     "cashSales": "ጥሬ ገንዘብ ሽያጭ",
-    "accountSales": "በሂሳብ ሽያጭ",
+    "accountSales": "አካካውንት ሽያጭ",
     "totalRevenue": "ጠቅላላ ገቢ",
     "totalProfit": "ጠቅላላ ትርፍ",
     "soldProducts": "የተሸጡ እቃዎች",
